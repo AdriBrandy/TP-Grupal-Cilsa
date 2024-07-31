@@ -10,12 +10,14 @@
       const surname = document.getElementById('surname').value;
       const email = document.getElementById('email').value;
       const country = document.getElementById('country').value;
+      const msj = document.getElementById('msj').value;
       
       const message = `
           Nombre: ${name}\n
           Apellido: ${surname}\n
           Email: ${email}\n
-          País de Residencia: ${country}
+          País de Residencia: ${country}\n
+          Mensaje: ${msj}
       `;
       
       alert(message);
