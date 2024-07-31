@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tp Grupal Cilsa</title>
+  <link rel="shortcut icon" href="../asset/INDEX/telefono-movil.png" type="image/x-icon">
   <link rel="stylesheet" href="../bootstrap.min.css" />
-  <script src="../assets/js/color-modes.js"></script>
+  <script src="../js/color-modes.js"></script>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../Estilos/celulares.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
@@ -35,6 +36,68 @@
         d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
     </symbol>
   </svg>
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+      stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+    </symbol>
+    <symbol id="cart" viewBox="0 0 16 16">
+      <path
+        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+    </symbol>
+    <symbol id="chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+    </symbol>
+  </svg>
   <!-- FIN BOTONES TEMA CLARO/OSCURO  -->
 
   <!-- BARRA DE NAVEGACION -->
@@ -44,7 +107,7 @@
         <svg class="bi" width="24" height="24">
           <use xlink:href="#aperture" />
         </svg>
-        Aperture
+        Grupo 11
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
         aria-controls="offcanvas" aria-label="Toggle navigation">
@@ -52,13 +115,13 @@
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+          <h5 class="offcanvas-title" id="offcanvasLabel">Grupo 11</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 justify-content-between">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">
+              <a title="agfsd" class="nav-link" href="../index.html">
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#aperture" />
                 </svg>
@@ -70,10 +133,17 @@
               <a class="nav-link" href="./accesorios.html">Accesorios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./ofertas.html">Ofertas</a>
+              <a title="asdf" class="nav-link" href="./ofertas.html">Ofertas</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="../faq.html">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./soporte.html">Soporte</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li class="nav-item">
+              <a title="asd" class="nav-link" href="#">
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#cart" />
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -126,8 +196,8 @@
         data-categoria="celulares" data-descuento="51">
         <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 1</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 1.</p>
+          <h5 class="phone-card-title"> Celu OFF 1</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 1.</p>
           <p class="phone-card-price">
             <span class="price-original">$100</span>
             <span class="price-discount">$49</span>
@@ -139,8 +209,8 @@
         data-categoria="celulares" data-descuento="50">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 2</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+          <h5 class="phone-card-title"> Celu OFF 2</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 2.</p>
           <p class="phone-card-price">
             <span class="price-original">$200</span>
             <span class="price-discount">$150</span>
@@ -152,8 +222,8 @@
         data-categoria="celulares" data-descuento="51">
         <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 1</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 1.</p>
+          <h5 class="phone-card-title"> Celu OFF 1</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 1.</p>
           <p class="phone-card-price">
             <span class="price-original">$100</span>
             <span class="price-discount">$49</span>
@@ -165,8 +235,8 @@
         data-categoria="celulares" data-descuento="50">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 2</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+          <h5 class="phone-card-title"> Celu OFF 2</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 2.</p>
           <p class="phone-card-price">
             <span class="price-original">$200</span>
             <span class="price-discount">$150</span>
@@ -175,13 +245,13 @@
         </div>
       </div>
 
-      <div class="phone-card" data-marca="Marca 3" data-precio="49" data-pulgada="6.6" data-categoria="accesorios">
+      <div class="phone-card offer-card" data-marca="Marca 3" data-precio="449" data-pulgada="6.6" data-categoria="accesorios"  data-descuento="150">
         <img src="../asset/ACCESORIOS/CARGADOR BLANCO.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 1</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 1.</p>
-          <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+          <p class="phone-card-text">Descripcion accesorio .</p>
+          <p class="phone-card-price"> <span class="price-original">$499</span>
+            <span class="price-discount">$150</span> </p>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -190,9 +260,10 @@
         <img src="../asset/ACCESORIOS/CARGADOR PARA AUTO SAMSUNG/size515-151052-02.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 2</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 2.</p>
+          <p class="phone-card-text">Descripcion accesorio 2.</p>
           <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-discount">$150</span></p>
+
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -201,9 +272,9 @@
         <img src="../asset/ACCESORIOS/CARGADOR PARED.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 3</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 3.</p>
+          <p class="phone-card-text">Descripcion accesorio 3.</p>
           <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-discount">$150</span></p>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -211,8 +282,8 @@
         data-categoria="celulares" data-descuento="51">
         <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 1</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 1.</p>
+          <h5 class="phone-card-title"> Celu OFF 1</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 1.</p>
           <p class="phone-card-price">
             <span class="price-original">$100</span>
             <span class="price-discount">$49</span>
@@ -224,8 +295,8 @@
         data-categoria="celulares" data-descuento="50">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 2</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+          <h5 class="phone-card-title"> Celu OFF 2</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 2.</p>
           <p class="phone-card-price">
             <span class="price-original">$200</span>
             <span class="price-discount">$150</span>
@@ -237,8 +308,8 @@
         data-categoria="celulares" data-descuento="51">
         <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 1</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 1.</p>
+          <h5 class="phone-card-title"> Celu OFF 1</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 1.</p>
           <p class="phone-card-price">
             <span class="price-original">$100</span>
             <span class="price-discount">$49</span>
@@ -250,8 +321,8 @@
         data-categoria="celulares" data-descuento="50">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 2</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+          <h5 class="phone-card-title"> Celu OFF 2</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 2.</p>
           <p class="phone-card-price">
             <span class="price-original">$200</span>
             <span class="price-discount">$15</span>
@@ -264,9 +335,9 @@
         <img src="../asset/ACCESORIOS/CARGADOR BLANCO.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 1</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 1.</p>
+          <p class="phone-card-text">Descripcion accesorio 1.</p>
           <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-discount">$150</span></p>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -275,9 +346,9 @@
         <img src="../asset/ACCESORIOS/CARGADOR PARA AUTO SAMSUNG/size515-151052-02.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 2</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 2.</p>
+          <p class="phone-card-text">Descripcion accesorio 2.</p>
           <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-discount">$150</span></p>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -286,9 +357,9 @@
         <img src="../asset/ACCESORIOS/CARGADOR PARED.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 3</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 3.</p>
+          <p class="phone-card-text">Descripcion accesorio 3.</p>
           <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-discount">$150</span></p>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -296,8 +367,8 @@
         data-categoria="celulares" data-descuento="51">
         <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 1</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 1.</p>
+          <h5 class="phone-card-title"> Celu OFF 1</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 1.</p>
           <p class="phone-card-price">
             <span class="price-original">$100</span>
             <span class="price-discount">$49</span>
@@ -309,8 +380,8 @@
         data-categoria="celulares" data-descuento="54">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 2</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+          <h5 class="phone-card-title"> Celu OFF 2</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 2.</p>
           <p class="phone-card-price">
             <span class="price-original">$150</span>
             <span class="price-discount">$54</span>
@@ -322,8 +393,8 @@
         data-categoria="celulares" data-descuento="51">
         <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 1</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 1.</p>
+          <h5 class="phone-card-title">Celular Of</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 1.</p>
           <p class="phone-card-price">
             <span class="price-original">$10000</span>
             <span class="price-discount">$12</span>
@@ -335,8 +406,8 @@
         data-categoria="celulares" data-descuento="1690">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
-          <h5 class="phone-card-title">Celular en Oferta 2</h5>
-          <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+          <h5 class="phone-card-title"> Celu OFF 2</h5>
+          <p class="phone-card-text">Descripcion celular en oferta 2.</p>
           <p class="phone-card-price">
             <span class="price-original">$95700</span>
             <span class="price-discount">$1690</span>
@@ -349,9 +420,11 @@
         <img src="../asset/ACCESORIOS/CARGADOR BLANCO.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 1</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 1.</p>
-          <p class="phone-card-price"> <span class="price-original">$20000</span>
+          <p class="phone-card-text">Descripcion accesorio 1.</p>
+          <p class="phone-card-price"> 
+            <span class="price-original">$20000</span>
             <span class="price-discount">$650</span>
+          </p>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -360,9 +433,9 @@
         <img src="../asset/ACCESORIOS/CARGADOR PARA AUTO SAMSUNG/size515-151052-02.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 2</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 2.</p>
+          <p class="phone-card-text">Descripcion accesorio 2.</p>
           <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-discount">$150</span></p>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -371,10 +444,12 @@
         <img src="../asset/ACCESORIOS/CARGADOR PARED.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 3</h5>
-          <p class="phone-card-text">Descripción breve del accesorio 3.</p>
+          <p class="phone-card-text">Descripcion accesorio 3.</p>
           <p class="phone-card-price"> <span class="price-original">$200</span>
             <span class="price-discount">$150</span>
+
             <button class="phone-card-btn btn btn-primary">Comprar</button>
+            </p>
         </div>
       </div>
 
@@ -382,8 +457,8 @@
     data-categoria="celulares" data-descuento="50">
     <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
     <div class="phone-card-body">
-      <h5 class="phone-card-title">Celular en Oferta 2</h5>
-      <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+      <h5 class="phone-card-title"> Celu OFF 2</h5>
+      <p class="phone-card-text">Descripcion celular en oferta 2.</p>
       <p class="phone-card-price">
         <span class="price-original">$200</span>
         <span class="price-discount">$150</span>
@@ -474,7 +549,7 @@
       displaySavings();
       filterProducts();
     });
-  </script>
+    </script>
     
 </body>
 
