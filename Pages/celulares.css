@@ -1,16 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    display: flex;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Estilos generales para las tarjetas de teléfono */
 .card-container {
     display: flex;
@@ -19,6 +6,7 @@ body {
     gap: 20px;
     padding: 20px;
 }
+
 
 .phone-card {
     background-color: #fff;

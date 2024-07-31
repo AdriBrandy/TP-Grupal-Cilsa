@@ -2,11 +2,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  display: flex;
-  margin: 20px;
-  max-width: 960px;
-}
 
 .icon-link>.bi {
   width: .75em;
