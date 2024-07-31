@@ -1,6 +1,7 @@
-.container {
-  max-width: 960px;
+body {
+  font-family: Arial, sans-serif;
 }
+
 
 .icon-link>.bi {
   width: .75em;
@@ -119,72 +120,4 @@
   .flex-md-equal>* {
     flex: 1;
   }
-}
-
-
-/* **************************************************************************************** */
-
-/*  PAGES CELULARES */
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.phone-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.phone-card:hover {
-  transform: scale(1.05);
-}
-
-.phone-card img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 100%;
-  height: auto;
-}
-
-.phone-card-body {
-  padding: 15px;
-}
-
-.phone-card-title {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.phone-card-text {
-  font-size: 1em;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.phone-card-price {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #a10f0f;
-}
-
-.phone-card-btn {
-  background-color: #3d24ac;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.phone-card-btn:hover {
-  background-color: #3423c7;
 }

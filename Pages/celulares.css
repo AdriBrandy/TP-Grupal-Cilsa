@@ -1,0 +1,164 @@
+/* Estilos generales para las tarjetas de teléfono */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.phone-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.phone-card:hover {
+    transform: scale(1.05);
+}
+
+.phone-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.phone-card-body {
+    padding: 15px;
+}
+
+.phone-card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.phone-card-text {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.phone-card-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #a10f0f;
+}
+
+.phone-card-btn {
+    background-color: #3d24ac;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.phone-card-btn:hover {
+    background-color: #3423c7;
+}
+
+.section-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Estilos para la barra lateral de filtros */
+.aside-container {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: sticky;
+    top: 20px;
+    box-sizing: border-box;
+}
+
+.h2busqueda {
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    font-size: .95em;
+    margin-bottom: 10px;
+}
+
+.filter-group h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.filter-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-group ul li {
+    margin-bottom: 10px;
+}
+
+.filter-group ul li label {
+    margin-left: 5px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+
+}
+
+@media (max-width: 575.98px) {
+    .phone-card {
+        width: 100%;
+    }
+
+    .aside-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .phone-card {
+        width: 45%;
+    }
+
+    .aside-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .phone-card {
+        width: 30%;
+    }
+
+    .aside-container {
+        width: 250px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .phone-card {
+        width: 20%;
+    }
+
+    .aside-container {
+        width: 250px;
+        margin-right: 20px;
+    }
+}

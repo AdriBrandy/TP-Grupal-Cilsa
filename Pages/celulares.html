@@ -10,7 +10,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../styles.css" rel="stylesheet" />
+  <link href="./celulares.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -120,7 +120,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 justify-content-between">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">
+              <a title="agfsd" class="nav-link" href="../index.html">
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#aperture" />
                 </svg>
@@ -132,12 +132,12 @@
               <a class="nav-link" href="./accesorios.html">Accesorios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./ofertas.html">Ofertas</a>
+              <a title="asdf" class="nav-link" href="./ofertas.html">Ofertas</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="./soporte.html">Soporte</a></li>
             <li class="nav-item"><a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a title="asd" class="nav-link" href="#">
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#cart" />
                 </svg>
@@ -150,30 +150,65 @@
   </nav>
   <!-- FIN DE BARRA DE NAVEGACION -->
 
-
   <main>
+    <section class="container-fluid section-container">
+      <aside class="sidebar">
+        <h2 class="h2busqueda">Refiná tu búsqueda</h2>
+        <div class="filter-group" id="marca-filter">
+          <h3>Marca</h3>
+          <ul>
+            <li><input type="checkbox" id="marca1" data-filter="marca" value="Marca 1"><label for="marca1">Marca
+                1</label></li>
+            <li><input type="checkbox" id="marca2" data-filter="marca" value="Marca 2"><label for="marca2">Marca
+                2</label></li>
+            <li><input type="checkbox" id="marca3" data-filter="marca" value="Marca 3"><label for="marca3">Marca
+                3</label></li>
+          </ul>
+        </div>
+        <div class="filter-group" id="price-filter">
+          <h3>Rango de precios</h3>
+          <ul>
+            <li><input type="checkbox" id="precio1" data-filter="precio" value="0-100"><label for="precio1">$0 -
+                $100</label></li>
+            <li><input type="checkbox" id="precio2" data-filter="precio" value="100-200"><label for="precio2">$100 -
+                $200</label></li>
+            <li><input type="checkbox" id="precio3" data-filter="precio" value="200-300"><label for="precio3">$200 -
+                $300</label></li>
+          </ul>
+        </div>
+        <div class="filter-group" id="size-filter">
+          <h3>Pulgada de Celulares</h3>
+          <ul>
+            <li><input type="checkbox" id="pulgada1" data-filter="pulgada" value="6.6"><label for="pulgada1">6.6</label>
+            </li>
+            <li><input type="checkbox" id="pulgada2" data-filter="pulgada" value="6.5"><label for="pulgada2">6.5</label>
+            </li>
+            <li><input type="checkbox" id="pulgada3" data-filter="pulgada" value="6.7"><label for="pulgada3">6.7</label>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-    <div class="container">
-      <div class="card-container">
-        <div class="phone-card">
+      <div class="products">
+        <div class="phone-card" data-marca="Marca 1" data-precio="49" data-pulgada="6.6">
           <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
           <div class="phone-card-body">
             <h5 class="phone-card-title">Celular 1</h5>
             <p class="phone-card-text">Descripción breve del celular 1.</p>
-            <p class="phone-card-price">$499.99</p>
+            <p class="phone-card-price">$49</p>
             <button class="phone-card-btn">Comprar</button>
           </div>
         </div>
-        <div class="phone-card">
+        <div class="phone-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5">
           <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
           <div class="phone-card-body">
             <h5 class="phone-card-title">Celular 2</h5>
             <p class="phone-card-text">Descripción breve del celular 2.</p>
-            <p class="phone-card-price">$599.99</p>
+            <p class="phone-card-price">$150</p>
             <button class="phone-card-btn">Comprar</button>
           </div>
         </div>
-        <div class="phone-card">
+        <div class="phone-card" data-marca="Marca 3" data-precio="699.99" data-pulgada="6.7">
           <img src="../asset/CELULARES/A14/size515-148934-01.webp" alt="Phone Image">
           <div class="phone-card-body">
             <h5 class="phone-card-title">Celular 3</h5>
@@ -182,113 +217,164 @@
             <button class="phone-card-btn">Comprar</button>
           </div>
         </div>
-        <!-- Puedes agregar más tarjetas de teléfonos aquí -->
+
+        <div class="phone-card" data-marca="Marca 1" data-precio="200" data-pulgada="6.6">
+          <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 1</h5>
+            <p class="phone-card-text">Descripción breve del celular 1.</p>
+            <p class="phone-card-price">$200</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 2" data-precio="599.99" data-pulgada="6.5">
+          <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 2</h5>
+            <p class="phone-card-text">Descripción breve del celular 2.</p>
+            <p class="phone-card-price">$599.99</p>
+            <button type="button" class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 3" data-precio="699.99" data-pulgada="6.7">
+          <img src="../asset/CELULARES/A14/size515-148934-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 3</h5>
+            <p class="phone-card-text">Descripción breve del celular 3.</p>
+            <p class="phone-card-price">$699.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+
+        <div class="phone-card" data-marca="Marca 1" data-precio="499.99" data-pulgada="6.6">
+          <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 1</h5>
+            <p class="phone-card-text">Descripción breve del celular 1.</p>
+            <p class="phone-card-price">$499.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 2" data-precio="599.99" data-pulgada="6.5">
+          <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 2</h5>
+            <p class="phone-card-text">Descripción breve del celular 2.</p>
+            <p class="phone-card-price">$599.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 3" data-precio="699.99" data-pulgada="6.7">
+          <img src="../asset/CELULARES/A14/size515-148934-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 3</h5>
+            <p class="phone-card-text">Descripción breve del celular 3.</p>
+            <p class="phone-card-price">$699.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+
+  <!-- INICIO DE FOOTER -->
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+          viewBox="0 0 24 24">
+          <title>Product</title>
+          <circle cx="12" cy="12" r="10" />
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </svg>
+        <small class="d-block mb-3 text-body-secondary">&copy; 2017–2024</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Cool stuff</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Random feature</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Team feature</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Another one</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Last time</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Resource name</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Resource</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Another resource</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Final resource</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Business</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Education</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Government</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Gaming</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Team</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Locations</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Privacy</a>
+          </li>
+          <li>
+            <a class="link-secondary text-decoration-none" href="#">Terms</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </footer>
+  <!-- FIN DE FOOTER -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-
-</main>
-
-
-
-<!-- INICIO DE FOOTER -->
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
-        viewBox="0 0 24 24">
-        <title>Product</title>
-        <circle cx="12" cy="12" r="10" />
-        <path
-          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-      </svg>
-      <small class="d-block mb-3 text-body-secondary">&copy; 2017–2024</small>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Features</h5>
-      <ul class="list-unstyled text-small">
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Cool stuff</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Random feature</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Team feature</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Another one</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Last time</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Resource name</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Resource</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Another resource</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Final resource</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Business</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Education</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Government</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Gaming</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Team</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Locations</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Privacy</a>
-        </li>
-        <li>
-          <a class="link-secondary text-decoration-none" href="#">Terms</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>
-<!-- FIN DE FOOTER -->
-
-
-<script src="../bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
