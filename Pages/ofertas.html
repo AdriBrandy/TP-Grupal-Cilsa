@@ -254,7 +254,7 @@
           <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
           <p class="phone-card-price">
             <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-discount">$15</span>
           </p>
           <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
@@ -306,52 +306,52 @@
         </div>
       </div>
       <div class="phone-card offer-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5"
-        data-categoria="celulares" data-descuento="50">
+        data-categoria="celulares" data-descuento="54">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Celular en Oferta 2</h5>
           <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
           <p class="phone-card-price">
-            <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-original">$150</span>
+            <span class="price-discount">$54</span>
           </p>
           <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
-      <div class="phone-card offer-card" data-marca="Marca 1" data-precio="49" data-pulgada="6.6"
+      <div class="phone-card offer-card" data-marca="Marca 1" data-precio="10000" data-pulgada="6.6"
         data-categoria="celulares" data-descuento="51">
         <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Celular en Oferta 1</h5>
           <p class="phone-card-text">Descripción breve del celular en oferta 1.</p>
           <p class="phone-card-price">
-            <span class="price-original">$100</span>
-            <span class="price-discount">$49</span>
+            <span class="price-original">$10000</span>
+            <span class="price-discount">$12</span>
           </p>
           <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
-      <div class="phone-card offer-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5"
-        data-categoria="celulares" data-descuento="50">
+      <div class="phone-card offer-card" data-marca="Marca 2" data-precio="95700" data-pulgada="6.5"
+        data-categoria="celulares" data-descuento="1690">
         <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Celular en Oferta 2</h5>
           <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
           <p class="phone-card-price">
-            <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+            <span class="price-original">$95700</span>
+            <span class="price-discount">$1690</span>
           </p>
           <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
 
-      <div class="phone-card" data-marca="Marca 3" data-precio="49" data-pulgada="6.6" data-categoria="accesorios">
+      <div class="phone-card" data-marca="Marca 3" data-precio="650" data-pulgada="6.6" data-categoria="accesorios">
         <img src="../asset/ACCESORIOS/CARGADOR BLANCO.webp" alt="Accessory Image">
         <div class="phone-card-body">
           <h5 class="phone-card-title">Accesorio 1</h5>
           <p class="phone-card-text">Descripción breve del accesorio 1.</p>
-          <p class="phone-card-price"> <span class="price-original">$200</span>
-            <span class="price-discount">$150</span>
+          <p class="phone-card-price"> <span class="price-original">$20000</span>
+            <span class="price-discount">$650</span>
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -377,6 +377,22 @@
             <button class="phone-card-btn btn btn-primary">Comprar</button>
         </div>
       </div>
+
+      <div class="phone-card offer-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5"
+    data-categoria="celulares" data-descuento="50">
+    <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
+    <div class="phone-card-body">
+      <h5 class="phone-card-title">Celular en Oferta 2</h5>
+      <p class="phone-card-text">Descripción breve del celular en oferta 2.</p>
+      <p class="phone-card-price">
+        <span class="price-original">$200</span>
+        <span class="price-discount">$150</span>
+      </p>
+      <p class="phone-card-savings"></p> <!-- Elemento para mostrar el ahorro -->
+      <button class="phone-card-btn btn btn-primary">Comprar</button>
+    </div>
+</div>
+
     </div>
 
   </main>
@@ -384,6 +400,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const categoryFilter = document.getElementById('categoryFilter');
@@ -391,32 +408,60 @@
       const resetFilters = document.getElementById('resetFilters');
       const productContainer = document.getElementById('productContainer');
       const originalProducts = Array.from(productContainer.children);
-
+    
+      function calculateSavings(product) {
+        const price = parseFloat(product.dataset.precio);
+        const originalPrice = parseFloat(product.querySelector('.price-original').textContent.replace('$', ''));
+        const savings = originalPrice - price;
+        const percentageSavings = (savings / originalPrice) * 100;
+        return { savings, percentageSavings };
+      }
+    
+      function displaySavings() {
+        originalProducts.forEach(product => {
+          const { savings, percentageSavings } = calculateSavings(product);
+    
+          let savingsElement = product.querySelector('.phone-card-savings');
+          savingsElement.textContent = `Ahorro: $${savings.toFixed(2)} (${percentageSavings.toFixed(2)}%)`;
+        });
+      }
+    
       function filterProducts() {
         const category = categoryFilter.value;
         const sort = discountSort.value;
-
+    
         let products = originalProducts.slice();
-
+    
         // Filter by category
         if (category !== "Seleccionar categoría") {
           products = products.filter(product => product.dataset.categoria === category);
         }
-
-        // Sort by discount
+    
+        // Sort by discount or savings
         if (sort) {
           products.sort((a, b) => {
             const discountA = parseInt(a.dataset.descuento || 0, 10);
             const discountB = parseInt(b.dataset.descuento || 0, 10);
-            return sort === 'asc' ? discountA - discountB : discountB - discountA;
+            const savingsA = calculateSavings(a).savings;
+            const savingsB = calculateSavings(b).savings;
+    
+            if (sort === 'asc') {
+              return discountA - discountB;
+            } else if (sort === 'desc') {
+              return discountB - discountA;
+            } else if (sort === 'savings-asc') {
+              return savingsA - savingsB;
+            } else if (sort === 'savings-desc') {
+              return savingsB - savingsA;
+            }
           });
         }
-
+    
         // Update the DOM
         productContainer.innerHTML = '';
         products.forEach(product => productContainer.appendChild(product));
       }
-
+    
       // Event listeners
       categoryFilter.addEventListener('change', filterProducts);
       discountSort.addEventListener('change', filterProducts);
@@ -425,12 +470,13 @@
         discountSort.selectedIndex = 0;
         filterProducts();
       });
-
-      // Initial filter
+    
+      // Initial filter and display savings
+      displaySavings();
       filterProducts();
     });
-  </script>
-
+    </script>
+    
 </body>
 
 </html>
