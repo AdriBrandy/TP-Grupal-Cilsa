@@ -1,6 +1,14 @@
-
+.us{
+    background-color: rgba(241, 231, 231, 0.362);
+}
   /* MARKETING CONTENT
   -------------------------------------------------- */
+  .col-md-5 img{
+    width: 50rem;
+    height: 25rem;
+    object-fit: cover;
+    
+  }
   
   /* Center align the text within the three columns below the carousel */
   .marketing{

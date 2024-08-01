@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Descubre los mejores celulares de alta gama con tecnología avanzada. Explora nuestra selección y aprovecha ofertas exclusivas.">
+  <title>Tp Grupal Cilsa</title>
+  <link rel="shortcut icon" href="../asset/INDEX/telefono-movil.png" type="image/x-icon">
   <link rel="stylesheet" href="../bootstrap.min.css" />
-  <script src="../assets/js/color-modes.js"></script>
+  <script src="../js/color-modes.js"></script>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../styles.css" rel="stylesheet" />
+  <link href="../Estilos/celulares.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css">
+
+
 </head>
 
 <body>
@@ -57,7 +61,7 @@
         </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+        <button type="button"  class="ark-mode-toggle dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
           aria-pressed="false">
           <svg class="bi me-2 opacity-50" width="1em" height="1em">
             <use href="#moon-stars-fill"></use>
@@ -82,6 +86,7 @@
       </li>
     </ul>
   </div>
+
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
       stroke-width="2" viewBox="0 0 24 24">
@@ -106,7 +111,7 @@
         <svg class="bi" width="24" height="24">
           <use xlink:href="#aperture" />
         </svg>
-        Aperture
+        Grupo 11
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
         aria-controls="offcanvas" aria-label="Toggle navigation">
@@ -114,13 +119,13 @@
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+          <h5 class="offcanvas-title" id="offcanvasLabel">Grupo 11</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 justify-content-between">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">
+              <a title="agfsd" class="nav-link" href="../index.html">
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#aperture" />
                 </svg>
@@ -132,12 +137,12 @@
               <a class="nav-link" href="./accesorios.html">Accesorios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./ofertas.html">Ofertas</a>
+              <a title="asdf" class="nav-link" href="./ofertas.html">Ofertas</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="./soporte.html">Soporte</a></li>
             <li class="nav-item"><a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a title="asd" class="nav-link" href="#">
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#cart" />
                 </svg>
@@ -150,10 +155,183 @@
   </nav>
   <!-- FIN DE BARRA DE NAVEGACION -->
 
-
   <main>
+    <section class="container-fluid promo-section text-center py-5">
+      <div class="container">
+        <h1>¡Descubre los Mejores Celulares de Alta Gama!</h1>
+        <p class="lead">Explora nuestra selección de celulares de lujo con tecnología de vanguardia. Cada modelo ofrece
+          un diseño sofisticado y un rendimiento excepcional.</p>
+        <p>Encuentra el teléfono perfecto para elevar tu experiencia móvil. ¡Aprovecha nuestras ofertas exclusivas y haz
+          tuyo uno de estos dispositivos premium hoy mismo!</p>
+        <a href="#data" class="btn btn-primary">Ver todos los modelos</a>
+      </div>
+    </section>
 
+    <section class="container-fluid section-container">
+
+
+      <!-- aside -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>Filtros</h2>
+          <button class="close-btn" aria-label="Cerrar">&times;</button>
+        </div>
+        <div class="filters">
+          <!-- Filtro por marca -->
+          <div class="filter-group">
+            <h3>Marca</h3>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" data-filter="marca" value="Marca 1"> Marca 1</label></li>
+              <li><label><input type="checkbox" data-filter="marca" value="Marca 2"> Marca 2</label></li>
+              <li><label><input type="checkbox" data-filter="marca" value="Marca 3"> Marca 3</label></li>
+              <!-- Añadir más marcas según sea necesario -->
+            </ul>
+          </div>
+
+          <!-- Filtro por rango de precios -->
+          <div class="filter-group">
+            <h3>Rango de Precio</h3>
+            <div class="range-slider">
+              <input title="asd" type="range" id="price-range" min="0" max="700" step="10" value="350">
+              <div class="range-values">
+                <span id="price-min">0</span> - <span id="price-max">700</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filtro por tamaño de pantalla -->
+          <div class="filter-group">
+            <h3>Tamaño de Pantalla</h3>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" data-filter="pulgada" value="6.5"> 6.5"</label></li>
+              <li><label><input type="checkbox" data-filter="pulgada" value="6.6"> 6.6"</label></li>
+              <li><label><input type="checkbox" data-filter="pulgada" value="6.7"> 6.7"</label></li>
+              <!-- Añadir más tamaños según sea necesario -->
+            </ul>
+          </div>
+
+          <!-- Botón de reinicio -->
+          <div class="filter-group">
+            <button class="reset-filters-btn">Reiniciar Filtros</button>
+          </div>
+        </div>
+      </aside>
+
+
+      <section id="data" class="products">
+        <div class="phone-card" data-marca="Marca 1" data-precio="49" data-pulgada="6.6">
+          <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 1</h5>
+            <p class="phone-card-text">Descripción breve del celular 1.</p>
+            <p class="phone-card-price">$49</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5">
+          <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 2</h5>
+            <p class="phone-card-text">Descripción breve del celular 2.</p>
+            <p class="phone-card-price">$150</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 3" data-precio="699.99" data-pulgada="6.7">
+          <img src="../asset/CELULARES/A14/size515-148934-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 3</h5>
+            <p class="phone-card-text">Descripción breve del celular 3.</p>
+            <p class="phone-card-price">$699.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <!-- Añadir más productos según sea necesario -->
+        <div class="phone-card" data-marca="Marca 1" data-precio="49" data-pulgada="6.6">
+          <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 1</h5>
+            <p class="phone-card-text">Descripción breve del celular 1.</p>
+            <p class="phone-card-price">$49</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5">
+          <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 2</h5>
+            <p class="phone-card-text">Descripción breve del celular 2.</p>
+            <p class="phone-card-price">$150</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 3" data-precio="699.99" data-pulgada="6.7">
+          <img src="../asset/CELULARES/A14/size515-148934-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 3</h5>
+            <p class="phone-card-text">Descripción breve del celular 3.</p>
+            <p class="phone-card-price">$699.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 1" data-precio="49" data-pulgada="6.6">
+          <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 1</h5>
+            <p class="phone-card-text">Descripción breve del celular 1.</p>
+            <p class="phone-card-price">$49</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5">
+          <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 2</h5>
+            <p class="phone-card-text">Descripción breve del celular 2.</p>
+            <p class="phone-card-price">$150</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 3" data-precio="699.99" data-pulgada="6.7">
+          <img src="../asset/CELULARES/A14/size515-148934-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 3</h5>
+            <p class="phone-card-text">Descripción breve del celular 3.</p>
+            <p class="phone-card-price">$699.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 1" data-precio="49" data-pulgada="6.6">
+          <img src="../asset/CELULARES/zflip/size515-149443-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 1</h5>
+            <p class="phone-card-text">Descripción breve del celular 1.</p>
+            <p class="phone-card-price">$49</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 2" data-precio="150" data-pulgada="6.5">
+          <img src="../asset/CELULARES/A05/size515-149989-02.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 2</h5>
+            <p class="phone-card-text">Descripción breve del celular 2.</p>
+            <p class="phone-card-price">$150</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+        <div class="phone-card" data-marca="Marca 3" data-precio="699.99" data-pulgada="6.7">
+          <img src="../asset/CELULARES/A14/size515-148934-01.webp" alt="Phone Image">
+          <div class="phone-card-body">
+            <h5 class="phone-card-title">Celular 3</h5>
+            <p class="phone-card-text">Descripción breve del celular 3.</p>
+            <p class="phone-card-price">$699.99</p>
+            <button class="phone-card-btn">Comprar</button>
+          </div>
+        </div>
+      </section>
   </main>
+
+  <script src="../js/script.js"></script>
 
 
 
@@ -249,8 +427,12 @@
   </footer>
   <!-- FIN DE FOOTER -->
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../bootstrap.bundle.min.js"></script>
+  
+
+
 </body>
 
 </html>
