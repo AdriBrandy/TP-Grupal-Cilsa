@@ -404,3 +404,7 @@
     }
 
 }
+
+.phone-card-body{
+    align-items: end;
+}
